@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>java_opengl_game_engine</artifactId>
+        <groupId>ru.java.opengl</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>Engine</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Physics</module>
+        <module>Graphics</module>
+        <module>Utils</module>
+        <module>Control</module>
+        <module>Models</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.java.opengl.core.settings</groupId>
+            <artifactId>Settings</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.java.opengl.core.support</groupId>
+            <artifactId>Support</artifactId>
+            <version>${version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
