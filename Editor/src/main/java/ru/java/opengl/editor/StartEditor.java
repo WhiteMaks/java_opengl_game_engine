@@ -1,7 +1,7 @@
 package ru.java.opengl.editor;
 
 import ru.java.opengl.engine.graphics.App;
-import ru.java.opengl.utils.EngineException;
+import ru.java.opengl.engine.utils.EngineException;
 
 public class StartEditor {
 

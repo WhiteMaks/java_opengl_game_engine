@@ -2,9 +2,9 @@ package ru.java.opengl.engine.graphics;
 
 import ru.java.opengl.engine.graphics.exceptions.GraphicsException;
 import ru.java.opengl.engine.graphics.exceptions.ShaderException;
-import ru.java.opengl.utils.EngineException;
-import ru.maven.module.logger.wrapper.Logger;
-import ru.maven.module.opengl.wrapper.OpenGL;
+import ru.java.opengl.engine.utils.EngineException;
+import ru.java.opengl.core.logger.wrapper.Logger;
+import ru.java.opengl.core.opengl.wrapper.OpenGL;
 import ru.java.opengl.core.settings.GlobalSettings;
 
 import java.nio.FloatBuffer;

@@ -1,6 +1,6 @@
 package ru.java.opengl.engine.graphics.exceptions;
 
-import ru.java.opengl.utils.EngineException;
+import ru.java.opengl.engine.utils.EngineException;
 
 public class WindowException extends EngineException {
 

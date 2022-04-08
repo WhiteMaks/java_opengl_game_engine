@@ -1,6 +1,6 @@
 package ru.java.opengl.engine.graphics;
 
-import ru.java.opengl.utils.EngineException;
+import ru.java.opengl.engine.utils.EngineException;
 
 public abstract class App {
     private final Window window;

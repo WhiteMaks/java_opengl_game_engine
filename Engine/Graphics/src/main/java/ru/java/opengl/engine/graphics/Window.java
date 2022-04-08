@@ -1,10 +1,10 @@
 package ru.java.opengl.engine.graphics;
 
-import ru.maven.module.control.Keyboard;
-import ru.maven.module.control.Mouse;
-import ru.java.opengl.utils.EngineException;
-import ru.maven.module.logger.wrapper.Logger;
-import ru.maven.module.opengl.wrapper.OpenGL;
+import ru.java.opengl.engine.control.Keyboard;
+import ru.java.opengl.engine.control.Mouse;
+import ru.java.opengl.engine.utils.EngineException;
+import ru.java.opengl.core.logger.wrapper.Logger;
+import ru.java.opengl.core.opengl.wrapper.OpenGL;
 import ru.java.opengl.core.settings.GlobalSettings;
 
 import java.util.AbstractMap;

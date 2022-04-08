@@ -1,9 +1,9 @@
 package ru.java.opengl.core.settings;
 
-import ru.maven.module.logger.wrapper.Logger;
-import ru.maven.module.logger.wrapper.impl.LoggerLogback;
-import ru.maven.module.opengl.wrapper.OpenGL;
-import ru.maven.module.opengl.wrapper.impl.OpenGLLWJGL;
+import ru.java.opengl.core.logger.wrapper.Logger;
+import ru.java.opengl.core.logger.wrapper.impl.LoggerLogback;
+import ru.java.opengl.core.opengl.wrapper.OpenGL;
+import ru.java.opengl.core.opengl.wrapper.impl.OpenGLLWJGL;
 import ru.java.opengl.core.settings.enums.LoggerLibrary;
 import ru.java.opengl.core.settings.enums.OpenGraphicLibrary;
 
