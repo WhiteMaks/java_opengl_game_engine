@@ -1,4 +1,4 @@
-package ru.java.opengl.engine.models;
+package ru.java.opengl.engine.models.utils;
 
 import ru.java.opengl.engine.models.exceptions.FileNotOBJFormatException;
 import ru.java.opengl.core.support.FileSupport;

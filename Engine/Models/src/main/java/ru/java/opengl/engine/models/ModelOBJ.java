@@ -1,6 +1,7 @@
 package ru.java.opengl.engine.models;
 
 import ru.java.opengl.engine.models.exceptions.FileNotOBJFormatException;
+import ru.java.opengl.engine.models.utils.FileOBJ;
 
 import java.io.File;
 import java.io.FileNotFoundException;
