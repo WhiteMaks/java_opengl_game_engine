@@ -1,7 +1,6 @@
 package ru.java.opengl.core.opengl.wrapper;
 
 import ru.java.opengl.core.opengl.wrapper.ext.*;
-import ru.maven.module.opengl.wrapper.ext.*;
 
 import java.nio.Buffer;
 import java.nio.FloatBuffer;
