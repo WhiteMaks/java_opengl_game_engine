@@ -1,13 +1,12 @@
 package ru.java.opengl.engine.graphics;
 
-import ru.java.opengl.engine.control.Keyboard;
-import ru.java.opengl.engine.control.Mouse;
-import ru.java.opengl.engine.utils.EngineException;
 import ru.java.opengl.core.logger.wrapper.Logger;
 import ru.java.opengl.core.opengl.wrapper.OpenGL;
 import ru.java.opengl.core.settings.GlobalSettings;
-
-import java.util.AbstractMap;
+import ru.java.opengl.engine.control.Keyboard;
+import ru.java.opengl.engine.control.Mouse;
+import ru.java.opengl.engine.control.utils.MousePosition;
+import ru.java.opengl.engine.utils.EngineException;
 
 public class Window {
     private final static Logger logger = GlobalSettings.getInstance().getLogger(Window.class);
@@ -67,24 +66,24 @@ public class Window {
             }
         });
         openGL.glfwSetMouseButtonCallback(window, (window, button, action, mods) -> {
-            AbstractMap.SimpleEntry<Double, Double> position = mouse.getPosition();
+            MousePosition position = mouse.getPosition();
             if (button == openGL.GLFW_MOUSE_BUTTON_RIGHT()) {
                 if (action == openGL.GLFW_PRESS()) {
-                    mouse.onRightPressed(position.getKey(), position.getValue());
+                    mouse.onRightPressed(position.getX(), position.getY());
                 } else {
-                    mouse.onRightReleased(position.getKey(), position.getValue());
+                    mouse.onRightReleased(position.getX(), position.getY());
                 }
             } else if (button == openGL.GLFW_MOUSE_BUTTON_LEFT()) {
                 if (action == openGL.GLFW_PRESS()) {
-                    mouse.onLeftPressed(position.getKey(), position.getValue());
+                    mouse.onLeftPressed(position.getX(), position.getY());
                 } else {
-                    mouse.onLeftReleased(position.getKey(), position.getValue());
+                    mouse.onLeftReleased(position.getX(), position.getY());
                 }
             }
         });
         openGL.glfwSetScrollCallback(window, (window, xOffset, yOffset) -> {
-            AbstractMap.SimpleEntry<Double, Double> position = mouse.getPosition();
-            mouse.onWheelDelta(position.getKey(), position.getValue(), yOffset);
+            MousePosition position = mouse.getPosition();
+            mouse.onWheelDelta(position.getX(), position.getY(), yOffset);
         });
         return mouse;
     }

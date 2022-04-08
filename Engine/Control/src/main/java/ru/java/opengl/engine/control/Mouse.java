@@ -1,6 +1,7 @@
 package ru.java.opengl.engine.control;
 
-import java.util.AbstractMap;
+import ru.java.opengl.engine.control.utils.MousePosition;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 
@@ -24,8 +25,8 @@ public class Mouse {
         isInWindow = false;
     }
 
-    public AbstractMap.SimpleEntry<Double, Double> getPosition() {
-        return new AbstractMap.SimpleEntry<>(x, y);
+    public MousePosition getPosition() {
+        return new MousePosition(x, y);
     }
 
     public double getPositionX() {
@@ -172,8 +173,8 @@ public class Mouse {
             return type;
         }
 
-        public AbstractMap.SimpleEntry<Double, Double> getPosition() {
-            return new AbstractMap.SimpleEntry<>(x, y);
+        public MousePosition getPosition() {
+            return new MousePosition(x, y);
         }
 
         public double getPositionX() {
